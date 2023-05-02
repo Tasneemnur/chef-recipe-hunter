@@ -3,12 +3,13 @@ import { Carousel, Container } from "react-bootstrap";
 import banner1 from "../../assets/banner1.jpg";
 import banner2 from "../../assets/banner2.jpg";
 import banner3 from "../../assets/banner3.jpg";
+import ChefSection from "../ChefSection/ChefSection";
 
 const Home = () => {
   return (
-    <Container className="py-5">
+    <Container className="py-3">
       <Carousel>
-        <Carousel.Item className="bg-dark">
+        <Carousel.Item className="bg-dark rounded">
           <img
             style={{ height: "600px" }}
             className="d-block w-100 rounded opacity-50"
@@ -20,7 +21,7 @@ const Home = () => {
             <p>A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="bg-dark">
+        <Carousel.Item className="bg-dark rounded">
           <img
             style={{ height: "600px" }}
             className="d-block w-100 rounded opacity-50"
@@ -33,7 +34,7 @@ const Home = () => {
             <p>A handful of simple ingredients typify the fresh, vibrant flavors of Greek cooking.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item className="bg-dark">
+        <Carousel.Item className="bg-dark rounded">
           <img
             style={{ height: "600px" }}
             className="d-block w-100 rounded opacity-50"
@@ -49,6 +50,8 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+
+      <ChefSection></ChefSection>
     </Container>
   );
 };
