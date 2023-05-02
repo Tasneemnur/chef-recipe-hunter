@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./layout/Main";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
+import Home from "./components/Home/Home";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Home></Home>
       }
     ]
   },
