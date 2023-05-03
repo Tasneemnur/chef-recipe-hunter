@@ -1,7 +1,8 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { useLoaderData } from "react-router-dom";
 import { AiFillLike } from "react-icons/ai";
+import Recipe from "../Recipe/Recipe";
 
 const ChefRecipes = () => {
   const data = useLoaderData();
@@ -25,7 +26,7 @@ const ChefRecipes = () => {
             <span className="text-danger"> Experience</span>
           </p>
           <p className="mt-3 mb-0 text-secondary">{chef_bio}</p>
-          <div className="d-flex align-items-center justifly-content-between my-2">
+          <div className="d-flex align-items-center justifly-content-between my-3">
             <div className="me-5 text-secondary fw-semibold"> Recipe: {number_of_recipes}</div>
 
             <div className="d-flex align-items-center">
@@ -35,6 +36,13 @@ const ChefRecipes = () => {
           </div>
         </div>
         <img src={chef_picture} alt="" className="rounded"/>
+      </div>
+
+      <h2 className='text-center my-5 fw-bold pt-5'>Chef's Special <span className="text-danger">Recipes</span> </h2>
+      <div className="row row-cols-md-3 row-cols-1 gap-3 justify-content-center">
+        {
+            recipes.map(recipe => <Recipe key={recipe.recipe_id} recipe={recipe}></Recipe>)
+        }
       </div>
     </Container>
   );
