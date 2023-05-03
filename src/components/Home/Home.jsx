@@ -50,7 +50,6 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-
       <ChefSection></ChefSection>
     </Container>
   );
