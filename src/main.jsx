@@ -10,6 +10,7 @@ import ChefRecipes from "./components/ChefRecipes/ChefRecipes";
 import Login from "./components/Login/Login";
 import Registration from "./components/Registration/registration";
 import AuthProvider from "./providers/AuthProvider";
+import Blog from "./components/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Registration></Registration>
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>
       },
     ]
   },

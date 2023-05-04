@@ -5,6 +5,7 @@ import banner2 from "../../assets/banner2.jpg";
 import banner3 from "../../assets/banner3.jpg";
 import ChefSection from "../ChefSection/ChefSection";
 import FoodCategory from "../FoodCategory/FoodCategory";
+import LatestRecipes from "../LatestRecipes/LatestRecipes";
 
 const Home = () => {
   return (
@@ -52,6 +53,7 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
       <FoodCategory></FoodCategory>
+      <LatestRecipes></LatestRecipes>
       <ChefSection></ChefSection>
     </Container>
   );

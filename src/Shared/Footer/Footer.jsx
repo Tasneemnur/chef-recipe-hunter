@@ -7,8 +7,8 @@ const Footer = () => {
     <div className="bg-dark">
       <Container>
         <footer className="legal-footer text-white mt-5 py-5">
-          <div className="row row-cols-2 row-cols-md-3">
-            <div className="border-end">
+          <div className="row row-cols-2 row-cols-md-3 g-3">
+            <div className="border-end col">
               <h5 className="text-danger fw-bold mb-4">Subscribe</h5>
               <p>
               Subscribe for our latest & Articles. We Won't Give You Spam Mails
@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
               </form>
             </div>
-            <div className="border-end px-5">
+            <div className="col border-end px-5">
               <h5 className="text-danger fw-bold mb-4">Explore</h5>
               <ul className="list-group">
                 <Link to="/" className="text-white text-decoration-none">
@@ -43,7 +43,7 @@ const Footer = () => {
                 </Link>
               </ul>
             </div>
-            <div className="px-5">
+            <div className="px-md-5 col py-4 py-md-0">
               <h5 className="text-danger fw-bold mb-4">Contact</h5>
               <p>787 Mark View Street, New Town, California</p>
               <p>666 888 0000</p>

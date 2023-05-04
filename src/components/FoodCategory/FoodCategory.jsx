@@ -11,24 +11,24 @@ const FoodCategory = () => {
     return (
         <div className='py-5'>
              <h2 className='text-center my-5 fw-bold'>Recipe <span className='text-danger'>Categories</span></h2>
-             <div className='row row-cols-2 row-cols-md-5'>
-             <div>
+             <div className='row row-cols-2 row-cols-md-5 g-2'>
+             <div className='col'>
                 <img src={appetizers} alt="" srcset="" style={{height:"170px", width:"170px"}} className='rounded-circle' />
                 <h4 className='text-center my-3 text-muted'>Appetizers</h4>
              </div>
-             <div>
+             <div className='col'>
                 <img src={beef} alt="" srcset="" style={{height:"170px", width:"170px"}} className='rounded-circle' />
                 <h4 className='text-center my-3 text-muted'>Beef</h4>
              </div>
-             <div>
-                <img src={chicken} alt="" srcset="" style={{height:"180px", width:"180px"}} className='rounded-circle'/>
+             <div className='col'>
+                <img src={chicken} alt="" srcset="" style={{height:"170px", width:"170px"}} className='rounded-circle'/>
                 <h4 className='text-center my-3 text-muted'>Chicken</h4>
              </div>
-             <div>
+             <div className='col'>
                 <img src={Vegetarian} alt="" srcset="" style={{height:"170px", width:"170px"}} className='rounded-circle' />
                 <h4 className='text-center my-3 text-muted'>Vegetarian</h4>
              </div>
-             <div>
+             <div className='col'>
                 <img src={dessert} alt="" srcset="" style={{height:"170px", width:"170px"}} className='rounded-circle' />
                 <h4 className='text-center my-3 text-muted'>Desserts</h4>
              </div>
