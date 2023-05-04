@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       {
         path: "/recipes/:id",
         element: <PrivateRoute><ChefRecipes></ChefRecipes></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/chefs/${params.id}`)
+        loader: ({params}) => fetch(`https://assignment-10-chef-recipe-hunter-server-tasneemnur.vercel.app/chefs/${params.id}`)
       },
       {
         path: "/login",

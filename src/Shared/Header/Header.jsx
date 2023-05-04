@@ -3,7 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import React, { useContext } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
-import person from "../../assets/user-2.png";
 import { Button } from "react-bootstrap";
 import { AuthContext } from "../../providers/AuthProvider";
 const Header = () => {
@@ -29,14 +28,13 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto">
-              <NavLink
+            <Link
                 to="/"
-                style={(isActive) => ({
-                  color: isActive ? "green" : "blue",
-                })}
+                className="text-decoration-none text-secondary me-3"
               >
-                FAQs
-              </NavLink>
+                Home
+              </Link>
+            
               <Link
                 to="/blog"
                 className="text-decoration-none text-secondary me-3"
@@ -48,10 +46,12 @@ const Header = () => {
           {user ? (
             <div>
               <img
-                src={person}
+                src={user.photoURL}
                 alt=""
                 srcset=""
-                style={{ height: "50px", width: "50px" }}
+                className="rounded-circle text-danger"
+                title={user.displayName}
+                style={{ height: "60px", width: "60px" }}
               />
               <Button
                 onClick={handleLogout}
