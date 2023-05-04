@@ -10,5 +10,5 @@
 - One can login through their google and github accout if they want.
 - There is also a blog section where some asked questions answered.
 - In this website there is also a footer.
-- https://assignment-10-chef-recip-4e537.web.app/
-- https://assignment-10-chef-recip-4e537.web.app
+- Client site: https://assignment-10-chef-recip-4e537.web.app/
+- Server site: https://assignment-10-chef-recipe-hunter-server-tasneemnur.vercel.app/
