@@ -12,7 +12,6 @@ const ChefSection = () => {
         .then(res => res.json())
         .then(data => {
             setChefs(data)
-            setLoading(false)
             })
         .catch(error => console.error(error))
     }, [])
