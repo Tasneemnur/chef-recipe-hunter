@@ -11,7 +11,7 @@ const ChefSection = () => {
     }, [])
     return (
         <div>
-            <h2 className='text-center my-5 fw-bold'>Our <span className='text-danger'>Chefs</span></h2>
+            <h2 className='text-center my-4 fw-bold'>Our <span className='text-danger'>Chefs</span></h2>
             <div className='row row-cols-1 row-cols-md-3 gap-3 justify-content-center'>
             {
                 chefs.map(chef => <Chef key={chef.id} chef={chef}></Chef> )

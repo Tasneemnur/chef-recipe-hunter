@@ -14,7 +14,7 @@ const Chef = ({ chef }) => {
     likes,
   } = chef;
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "22rem" }}>
       <Card.Img variant="top" src={chef_picture} className="mt-3 rounded" />
       <Card.Body>
         <Card.Title className="my-1">{chef_name}</Card.Title>

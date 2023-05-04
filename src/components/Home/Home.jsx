@@ -4,6 +4,7 @@ import banner1 from "../../assets/banner1.jpg";
 import banner2 from "../../assets/banner2.jpg";
 import banner3 from "../../assets/banner3.jpg";
 import ChefSection from "../ChefSection/ChefSection";
+import FoodCategory from "../FoodCategory/FoodCategory";
 
 const Home = () => {
   return (
@@ -50,6 +51,7 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <FoodCategory></FoodCategory>
       <ChefSection></ChefSection>
     </Container>
   );
