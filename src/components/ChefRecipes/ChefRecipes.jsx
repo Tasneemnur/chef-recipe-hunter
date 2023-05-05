@@ -3,6 +3,7 @@ import { Card, Container } from "react-bootstrap";
 import { useLoaderData } from "react-router-dom";
 import { AiFillLike } from "react-icons/ai";
 import Recipe from "../Recipe/Recipe";
+import LazyLoad from "react-lazy-load";
 
 const ChefRecipes = () => {
   const data = useLoaderData();
@@ -18,7 +19,7 @@ const ChefRecipes = () => {
   } = data;
   return (
     <Container>
-      <div className="d-flex justify-content-center align-items-center my-5">
+      <div className="d-flex justify-content-center align-items-center my-5 gap-3">
         <div className="me-4">
           <h1 className="fw-bold my-0">{chef_name}</h1>
           <p className="fs-5 fw-semibold my-1">
@@ -35,7 +36,7 @@ const ChefRecipes = () => {
             </div>
           </div>
         </div>
-        <img src={chef_picture} alt="" className="rounded"/>
+      <img src={chef_picture} alt="" className="rounded h-75 w-75"/>
       </div>
 
       <h2 className='text-center my-5 fw-bold pt-5'>Chef's Special <span className="text-danger">Recipes</span> </h2>

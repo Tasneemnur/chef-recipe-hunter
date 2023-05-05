@@ -3,6 +3,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { AiFillLike } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
 
 const Chef = ({ chef }) => {
   const {
@@ -15,7 +16,9 @@ const Chef = ({ chef }) => {
   } = chef;
   return (
     <Card style={{ width: "22rem" }}>
+      <LazyLoad height={225} width={326} threshold={0.95} onContentVisible={() => {console.log('loaded!')}}>
       <Card.Img variant="top" src={chef_picture} className="mt-3 rounded" />
+      </LazyLoad>
       <Card.Body>
         <Card.Title className="my-1">{chef_name}</Card.Title>
         <Card.Text className="fs-6 mb-3 text-secondary">

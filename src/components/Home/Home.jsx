@@ -55,6 +55,7 @@ const Home = () => {
       <FoodCategory></FoodCategory>
       <LatestRecipes></LatestRecipes>
       <ChefSection></ChefSection>
+      
     </Container>
   );
 };
