@@ -27,7 +27,6 @@ const ChefSection = () => {
         ) : (
           chefs.map((chef) => <Chef key={chef.id} chef={chef}></Chef>)
         )}
-        {}
       </div>
     </div>
   );

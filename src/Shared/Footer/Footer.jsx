@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,15 +32,42 @@ const Footer = () => {
             <div className="col border-end px-5">
               <h5 className="text-danger fw-bold mb-4">Explore</h5>
               <ul className="list-group">
-                <Link to="/" className="text-white text-decoration-none">
-                  Home
-                </Link>
-                <Link to="/blog" className="text-white text-decoration-none">
-                  Blog
-                </Link>
-                <Link to="/login" className="text-white text-decoration-none">
-                  Login
-                </Link>
+              <NavLink
+                to="/"
+                style={({ isActive }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "gray",
+                    textDecoration: isActive ? "none" : "none"
+                  };
+                }}
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/blog"
+                style={({ isActive }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "gray",
+                    textDecoration: isActive ? "none" : "none"
+                  };
+                }}
+              >
+                Blog
+              </NavLink>
+              <NavLink
+                to="/login"
+                style={({ isActive }) => {
+                  return {
+                    fontWeight: isActive ? "bold" : "",
+                    color: isActive ? "white" : "gray",
+                    textDecoration: isActive ? "none" : "none"
+                  };
+                }}
+              >
+                Login
+              </NavLink>
               </ul>
             </div>
             <div className="px-md-5 col py-4 py-md-0">
